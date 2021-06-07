@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+import sys, yaml, json; 
+
+print(yaml.dump(yaml.load(sys.stdin, Loader=yaml.SafeLoader), default_flow_style=False))
